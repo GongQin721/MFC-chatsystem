@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: InstantMessaging - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/InstantMessaging.res" /d "_DEBUG" "F:\VC6.0\work\20161220\InstantMessaging\InstantMessaging.rc"" 
+Creating temporary file "C:\Users\ADMINI~1.DES\AppData\Local\Temp\RSPC1BC.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/InstantMessaging.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\VC6.0\work\20161220\InstantMessaging\ChatRoomServerDlg.cpp"
+"F:\VC6.0\work\20161220\InstantMessaging\WhiteBoardClientDlg.cpp"
+"F:\VC6.0\work\20161220\InstantMessaging\CanvasStatic.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1.DES\AppData\Local\Temp\RSPC1BC.tmp" 
+Creating temporary file "C:\Users\ADMINI~1.DES\AppData\Local\Temp\RSPC1DC.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/InstantMessaging.pdb" /debug /machine:I386 /out:"Debug/InstantMessaging.exe" /pdbtype:sept 
+.\Debug\DialogSetting.obj
+.\Debug\InstantMessaging.obj
+.\Debug\InstantMessagingDlg.obj
+.\Debug\ListeningSocket.obj
+.\Debug\StdAfx.obj
+.\Debug\ChatDlg.obj
+.\Debug\font.obj
+.\Debug\oleobject.obj
+.\Debug\oleobjects.obj
+.\Debug\picture.obj
+.\Debug\richtext.obj
+.\Debug\ChatRoomClientDlg.obj
+.\Debug\ChatRoomClientSocket.obj
+.\Debug\ChatRoomServerDlg.obj
+.\Debug\ChatRoomServerSocket.obj
+.\Debug\AdvButton.obj
+.\Debug\FriendsListCtrl.obj
+.\Debug\ReceiveFilesSocket.obj
+.\Debug\SendFilesClientDlg.obj
+.\Debug\SendFilesClientThread.obj
+.\Debug\SendFilesReceiveUsersDlg.obj
+.\Debug\SendFilesServerDlg.obj
+.\Debug\SendFilesServerSocket.obj
+.\Debug\SendFilesServerThread.obj
+.\Debug\SendFilesSocket.obj
+.\Debug\WhiteBoardClientDlg.obj
+.\Debug\WhiteBoardClientSocket.obj
+.\Debug\WhiteBoardServerDlg.obj
+.\Debug\WhiteBoardServerSocket.obj
+.\Debug\CanvasStatic.obj
+.\Debug\InstantMessaging.res
+]
+Creating command line "link.exe @C:\Users\ADMINI~1.DES\AppData\Local\Temp\RSPC1DC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ChatRoomServerDlg.cpp
+WhiteBoardClientDlg.cpp
+CanvasStatic.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+InstantMessaging.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

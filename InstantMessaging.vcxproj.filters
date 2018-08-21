@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2fbffc6e-6217-460d-a848-ca12b97c8e9a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{88b90f33-183f-4bb9-846e-8d7c3fc17396}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{29e381df-8c04-4844-a84a-dc9864adbc42}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Chat">
+      <UniqueIdentifier>{b142ca83-5cc9-460e-913d-b8f97675780d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RichText">
+      <UniqueIdentifier>{5203a1d9-6b57-4176-a851-e93bb6812e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChatRoom">
+      <UniqueIdentifier>{5a82b6ac-dc50-41b1-af4c-699d874c69bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AdvButton">
+      <UniqueIdentifier>{e49537da-5b50-4747-b85b-ec0214c2c766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FriendsListCtrl">
+      <UniqueIdentifier>{2efab22e-221f-4b37-8452-ef6e7dbff716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShareScreen">
+      <UniqueIdentifier>{02a0154f-7823-4db1-91b3-e670af728fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SendFiles">
+      <UniqueIdentifier>{15f5fda6-e21c-4068-a51e-36d62990790f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WhiteBoard">
+      <UniqueIdentifier>{5221acd9-1a28-4550-a2a2-3dc341277851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CanvasStatic">
+      <UniqueIdentifier>{ddd65167-f573-430e-854d-a232c1f22fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoChat">
+      <UniqueIdentifier>{6847de77-8d19-4afe-9fc6-b3fc09c7daa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{9a0744aa-d1b9-49a5-a614-6af66e815527}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DialogSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstantMessaging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstantMessagingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListeningSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatDlg.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>RichText</Filter>
+    </ClCompile>
+    <ClCompile Include="oleobject.cpp">
+      <Filter>RichText</Filter>
+    </ClCompile>
+    <ClCompile Include="oleobjects.cpp">
+      <Filter>RichText</Filter>
+    </ClCompile>
+    <ClCompile Include="picture.cpp">
+      <Filter>RichText</Filter>
+    </ClCompile>
+    <ClCompile Include="richtext.cpp">
+      <Filter>RichText</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatRoomClientDlg.cpp">
+      <Filter>ChatRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatRoomClientSocket.cpp">
+      <Filter>ChatRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatRoomServerDlg.cpp">
+      <Filter>ChatRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatRoomServerSocket.cpp">
+      <Filter>ChatRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvButton.cpp">
+      <Filter>AdvButton</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendsListCtrl.cpp">
+      <Filter>FriendsListCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareScreenClientDlg.cpp">
+      <Filter>ShareScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareScreenClientSocket.cpp">
+      <Filter>ShareScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareScreenServerDlg.cpp">
+      <Filter>ShareScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareScreenServerSocket.cpp">
+      <Filter>ShareScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReceiveFilesSocket.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFilesClientDlg.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFilesClientThread.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFilesReceiveUsersDlg.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFilesServerDlg.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFilesServerSocket.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFilesServerThread.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFilesSocket.cpp">
+      <Filter>SendFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteBoardClientDlg.cpp">
+      <Filter>WhiteBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteBoardClientSocket.cpp">
+      <Filter>WhiteBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteBoardServerDlg.cpp">
+      <Filter>WhiteBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteBoardServerSocket.cpp">
+      <Filter>WhiteBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasStatic.cpp">
+      <Filter>CanvasStatic</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoChatDlg.cpp">
+      <Filter>VideoChat</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoChatListenSocket.cpp">
+      <Filter>VideoChat</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoChatSocket.cpp">
+      <Filter>VideoChat</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InstantMessaging.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DialogSetting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstantMessaging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstantMessagingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListeningSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatDlg.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>RichText</Filter>
+    </ClInclude>
+    <ClInclude Include="oleobject.h">
+      <Filter>RichText</Filter>
+    </ClInclude>
+    <ClInclude Include="oleobjects.h">
+      <Filter>RichText</Filter>
+    </ClInclude>
+    <ClInclude Include="picture.h">
+      <Filter>RichText</Filter>
+    </ClInclude>
+    <ClInclude Include="richtext.h">
+      <Filter>RichText</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatRoomClientDlg.h">
+      <Filter>ChatRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatRoomClientSocket.h">
+      <Filter>ChatRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatRoomServerDlg.h">
+      <Filter>ChatRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatRoomServerSocket.h">
+      <Filter>ChatRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvButton.h">
+      <Filter>AdvButton</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendsListCtrl.h">
+      <Filter>FriendsListCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareScreenClientDlg.h">
+      <Filter>ShareScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareScreenClientSocket.h">
+      <Filter>ShareScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareScreenServerDlg.h">
+      <Filter>ShareScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareScreenServerSocket.h">
+      <Filter>ShareScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceiveFilesSocket.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFilesClientDlg.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFilesClientThread.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFilesReceiveUsersDlg.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFilesServerDlg.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFilesServerSocket.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFilesServerThread.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFilesSocket.h">
+      <Filter>SendFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteBoardClientDlg.h">
+      <Filter>WhiteBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteBoardClientSocket.h">
+      <Filter>WhiteBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteBoardServerDlg.h">
+      <Filter>WhiteBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteBoardServerSocket.h">
+      <Filter>WhiteBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasStatic.h">
+      <Filter>CanvasStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoChatDlg.h">
+      <Filter>VideoChat</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoChatListenSocket.h">
+      <Filter>VideoChat</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoChatSocket.h">
+      <Filter>VideoChat</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Button\addfriend_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\addfriend_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\addfriend_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\addfriend_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\addfriend_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\addfriend_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\addfriend_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\addfriend_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp167.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp168.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp169.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp170.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp171.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp172.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp173.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp174.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp175.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp176.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp177.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp178.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp179.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp180.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp181.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp182.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp183.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp184.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp185.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp186.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp187.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp188.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp189.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp190.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp191.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp192.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp193.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp194.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp195.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp196.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp197.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp198.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp199.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp200.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp201.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp202.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp203.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp204.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp205.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp206.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp207.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp208.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp209.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp210.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp211.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp212.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp213.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp214.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp215.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp216.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp217.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp218.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp219.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp220.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp221.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp222.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp223.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp224.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp225.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp226.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp227.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp228.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp229.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp230.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp231.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp232.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp233.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp234.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp235.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp236.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp237.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp238.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp239.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp240.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp241.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp242.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp243.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp244.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp245.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp246.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp247.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp248.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Face\bmp249.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\camera.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\chatroom_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\chatroom_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\chatroom_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\chatroom_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursor.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\damotouicon (1).ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\delete.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\delfriend_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\delfriend_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\delfriend_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ChatRoom\delfriend_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\ellipse_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\eraser_1.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\eraser_2.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\eraser_3.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\eraser_4.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\eraser_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\eraser_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\eraser_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\eraser_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\InstantMessaging.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\InstantMessaging.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\InstantMessaging_offline.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\line_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\line_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\line_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\line_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\mike.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\pencil.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\pencil_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\pencil_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\pencil_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\pencil_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\rectangle_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sendfiles_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sendfiles_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sendfiles_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sendfiles_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sharescreen_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sharescreen_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sharescreen_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\sharescreen_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\trump.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\whiteboard_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\whiteboard_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\whiteboard_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Button\whiteboard_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_1_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_1_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_1_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_1_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_2_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_2_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_2_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_2_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_3_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_3_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_3_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_3_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_4_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_4_down.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_4_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\WhiteBoard\width_4_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

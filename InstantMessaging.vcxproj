@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\InstantMessaging.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\InstantMessaging.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\InstantMessaging.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\InstantMessaging.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\InstantMessaging.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\InstantMessaging.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\InstantMessaging.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\InstantMessaging.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DialogSetting.cpp" />
+    <ClCompile Include="InstantMessaging.cpp" />
+    <ClCompile Include="InstantMessagingDlg.cpp" />
+    <ClCompile Include="ListeningSocket.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ChatDlg.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="oleobject.cpp" />
+    <ClCompile Include="oleobjects.cpp" />
+    <ClCompile Include="picture.cpp" />
+    <ClCompile Include="richtext.cpp" />
+    <ClCompile Include="ChatRoomClientDlg.cpp" />
+    <ClCompile Include="ChatRoomClientSocket.cpp" />
+    <ClCompile Include="ChatRoomServerDlg.cpp" />
+    <ClCompile Include="ChatRoomServerSocket.cpp" />
+    <ClCompile Include="AdvButton.cpp" />
+    <ClCompile Include="FriendsListCtrl.cpp" />
+    <ClCompile Include="ShareScreenClientDlg.cpp" />
+    <ClCompile Include="ShareScreenClientSocket.cpp" />
+    <ClCompile Include="ShareScreenServerDlg.cpp" />
+    <ClCompile Include="ShareScreenServerSocket.cpp" />
+    <ClCompile Include="ReceiveFilesSocket.cpp" />
+    <ClCompile Include="SendFilesClientDlg.cpp" />
+    <ClCompile Include="SendFilesClientThread.cpp" />
+    <ClCompile Include="SendFilesReceiveUsersDlg.cpp" />
+    <ClCompile Include="SendFilesServerDlg.cpp" />
+    <ClCompile Include="SendFilesServerSocket.cpp" />
+    <ClCompile Include="SendFilesServerThread.cpp" />
+    <ClCompile Include="SendFilesSocket.cpp" />
+    <ClCompile Include="WhiteBoardClientDlg.cpp" />
+    <ClCompile Include="WhiteBoardClientSocket.cpp" />
+    <ClCompile Include="WhiteBoardServerDlg.cpp" />
+    <ClCompile Include="WhiteBoardServerSocket.cpp" />
+    <ClCompile Include="CanvasStatic.cpp" />
+    <ClCompile Include="VideoChatDlg.cpp" />
+    <ClCompile Include="VideoChatListenSocket.cpp" />
+    <ClCompile Include="VideoChatSocket.cpp" />
+    <ClCompile Include="Debug.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InstantMessaging.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DialogSetting.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="InstantMessaging.h" />
+    <ClInclude Include="InstantMessagingDlg.h" />
+    <ClInclude Include="ListeningSocket.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="zconf.h" />
+    <ClInclude Include="zlib.h" />
+    <ClInclude Include="ChatDlg.h" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="oleobject.h" />
+    <ClInclude Include="oleobjects.h" />
+    <ClInclude Include="picture.h" />
+    <ClInclude Include="richtext.h" />
+    <ClInclude Include="ChatRoomClientDlg.h" />
+    <ClInclude Include="ChatRoomClientSocket.h" />
+    <ClInclude Include="ChatRoomServerDlg.h" />
+    <ClInclude Include="ChatRoomServerSocket.h" />
+    <ClInclude Include="AdvButton.h" />
+    <ClInclude Include="FriendsListCtrl.h" />
+    <ClInclude Include="ShareScreenClientDlg.h" />
+    <ClInclude Include="ShareScreenClientSocket.h" />
+    <ClInclude Include="ShareScreenServerDlg.h" />
+    <ClInclude Include="ShareScreenServerSocket.h" />
+    <ClInclude Include="ReceiveFilesSocket.h" />
+    <ClInclude Include="SendFilesClientDlg.h" />
+    <ClInclude Include="SendFilesClientThread.h" />
+    <ClInclude Include="SendFilesReceiveUsersDlg.h" />
+    <ClInclude Include="SendFilesServerDlg.h" />
+    <ClInclude Include="SendFilesServerSocket.h" />
+    <ClInclude Include="SendFilesServerThread.h" />
+    <ClInclude Include="SendFilesSocket.h" />
+    <ClInclude Include="WhiteBoardClientDlg.h" />
+    <ClInclude Include="WhiteBoardClientSocket.h" />
+    <ClInclude Include="WhiteBoardServerDlg.h" />
+    <ClInclude Include="WhiteBoardServerSocket.h" />
+    <ClInclude Include="CanvasStatic.h" />
+    <ClInclude Include="VideoChatDlg.h" />
+    <ClInclude Include="VideoChatListenSocket.h" />
+    <ClInclude Include="VideoChatSocket.h" />
+    <ClInclude Include="Debug.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Button\addfriend_disable.bmp" />
+    <CustomBuild Include="res\ChatRoom\addfriend_disable.bmp" />
+    <CustomBuild Include="res\Button\addfriend_down.bmp" />
+    <CustomBuild Include="res\ChatRoom\addfriend_down.bmp" />
+    <CustomBuild Include="res\Button\addfriend_hover.bmp" />
+    <CustomBuild Include="res\ChatRoom\addfriend_hover.bmp" />
+    <CustomBuild Include="res\Button\addfriend_normal.bmp" />
+    <CustomBuild Include="res\ChatRoom\addfriend_normal.bmp" />
+    <CustomBuild Include="res\Face\bmp167.bmp" />
+    <CustomBuild Include="res\Face\bmp168.bmp" />
+    <CustomBuild Include="res\Face\bmp169.bmp" />
+    <CustomBuild Include="res\Face\bmp170.bmp" />
+    <CustomBuild Include="res\Face\bmp171.bmp" />
+    <CustomBuild Include="res\Face\bmp172.bmp" />
+    <CustomBuild Include="res\Face\bmp173.bmp" />
+    <CustomBuild Include="res\Face\bmp174.bmp" />
+    <CustomBuild Include="res\Face\bmp175.bmp" />
+    <CustomBuild Include="res\Face\bmp176.bmp" />
+    <CustomBuild Include="res\Face\bmp177.bmp" />
+    <CustomBuild Include="res\Face\bmp178.bmp" />
+    <CustomBuild Include="res\Face\bmp179.bmp" />
+    <CustomBuild Include="res\Face\bmp180.bmp" />
+    <CustomBuild Include="res\Face\bmp181.bmp" />
+    <CustomBuild Include="res\Face\bmp182.bmp" />
+    <CustomBuild Include="res\Face\bmp183.bmp" />
+    <CustomBuild Include="res\Face\bmp184.bmp" />
+    <CustomBuild Include="res\Face\bmp185.bmp" />
+    <CustomBuild Include="res\Face\bmp186.bmp" />
+    <CustomBuild Include="res\Face\bmp187.bmp" />
+    <CustomBuild Include="res\Face\bmp188.bmp" />
+    <CustomBuild Include="res\Face\bmp189.bmp" />
+    <CustomBuild Include="res\Face\bmp190.bmp" />
+    <CustomBuild Include="res\Face\bmp191.bmp" />
+    <CustomBuild Include="res\Face\bmp192.bmp" />
+    <CustomBuild Include="res\Face\bmp193.bmp" />
+    <CustomBuild Include="res\Face\bmp194.bmp" />
+    <CustomBuild Include="res\Face\bmp195.bmp" />
+    <CustomBuild Include="res\Face\bmp196.bmp" />
+    <CustomBuild Include="res\Face\bmp197.bmp" />
+    <CustomBuild Include="res\Face\bmp198.bmp" />
+    <CustomBuild Include="res\Face\bmp199.bmp" />
+    <CustomBuild Include="res\Face\bmp200.bmp" />
+    <CustomBuild Include="res\Face\bmp201.bmp" />
+    <CustomBuild Include="res\Face\bmp202.bmp" />
+    <CustomBuild Include="res\Face\bmp203.bmp" />
+    <CustomBuild Include="res\Face\bmp204.bmp" />
+    <CustomBuild Include="res\Face\bmp205.bmp" />
+    <CustomBuild Include="res\Face\bmp206.bmp" />
+    <CustomBuild Include="res\Face\bmp207.bmp" />
+    <CustomBuild Include="res\Face\bmp208.bmp" />
+    <CustomBuild Include="res\Face\bmp209.bmp" />
+    <CustomBuild Include="res\Face\bmp210.bmp" />
+    <CustomBuild Include="res\Face\bmp211.bmp" />
+    <CustomBuild Include="res\Face\bmp212.bmp" />
+    <CustomBuild Include="res\Face\bmp213.bmp" />
+    <CustomBuild Include="res\Face\bmp214.bmp" />
+    <CustomBuild Include="res\Face\bmp215.bmp" />
+    <CustomBuild Include="res\Face\bmp216.bmp" />
+    <CustomBuild Include="res\Face\bmp217.bmp" />
+    <CustomBuild Include="res\Face\bmp218.bmp" />
+    <CustomBuild Include="res\Face\bmp219.bmp" />
+    <CustomBuild Include="res\Face\bmp220.bmp" />
+    <CustomBuild Include="res\Face\bmp221.bmp" />
+    <CustomBuild Include="res\Face\bmp222.bmp" />
+    <CustomBuild Include="res\Face\bmp223.bmp" />
+    <CustomBuild Include="res\Face\bmp224.bmp" />
+    <CustomBuild Include="res\Face\bmp225.bmp" />
+    <CustomBuild Include="res\Face\bmp226.bmp" />
+    <CustomBuild Include="res\Face\bmp227.bmp" />
+    <CustomBuild Include="res\Face\bmp228.bmp" />
+    <CustomBuild Include="res\Face\bmp229.bmp" />
+    <CustomBuild Include="res\Face\bmp230.bmp" />
+    <CustomBuild Include="res\Face\bmp231.bmp" />
+    <CustomBuild Include="res\Face\bmp232.bmp" />
+    <CustomBuild Include="res\Face\bmp233.bmp" />
+    <CustomBuild Include="res\Face\bmp234.bmp" />
+    <CustomBuild Include="res\Face\bmp235.bmp" />
+    <CustomBuild Include="res\Face\bmp236.bmp" />
+    <CustomBuild Include="res\Face\bmp237.bmp" />
+    <CustomBuild Include="res\Face\bmp238.bmp" />
+    <CustomBuild Include="res\Face\bmp239.bmp" />
+    <CustomBuild Include="res\Face\bmp240.bmp" />
+    <CustomBuild Include="res\Face\bmp241.bmp" />
+    <CustomBuild Include="res\Face\bmp242.bmp" />
+    <CustomBuild Include="res\Face\bmp243.bmp" />
+    <CustomBuild Include="res\Face\bmp244.bmp" />
+    <CustomBuild Include="res\Face\bmp245.bmp" />
+    <CustomBuild Include="res\Face\bmp246.bmp" />
+    <CustomBuild Include="res\Face\bmp247.bmp" />
+    <CustomBuild Include="res\Face\bmp248.bmp" />
+    <CustomBuild Include="res\Face\bmp249.bmp" />
+    <CustomBuild Include="res\camera.bmp" />
+    <CustomBuild Include="res\Button\chatroom_disable.bmp" />
+    <CustomBuild Include="res\Button\chatroom_down.bmp" />
+    <CustomBuild Include="res\Button\chatroom_hover.bmp" />
+    <CustomBuild Include="res\Button\chatroom_normal.bmp" />
+    <CustomBuild Include="res\cursor.cur" />
+    <CustomBuild Include="res\damotouicon (1).ico" />
+    <CustomBuild Include="res\delete.bmp" />
+    <CustomBuild Include="res\ChatRoom\delfriend_disable.bmp" />
+    <CustomBuild Include="res\ChatRoom\delfriend_down.bmp" />
+    <CustomBuild Include="res\ChatRoom\delfriend_hover.bmp" />
+    <CustomBuild Include="res\ChatRoom\delfriend_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_empty_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\ellipse_normal.bmp" />
+    <CustomBuild Include="res\eraser_1.cur" />
+    <CustomBuild Include="res\eraser_2.cur" />
+    <CustomBuild Include="res\eraser_3.cur" />
+    <CustomBuild Include="res\eraser_4.cur" />
+    <CustomBuild Include="res\WhiteBoard\eraser_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\eraser_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\eraser_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\eraser_normal.bmp" />
+    <CustomBuild Include="res\InstantMessaging.ico" />
+    <CustomBuild Include="res\InstantMessaging.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\InstantMessaging_offline.ico" />
+    <CustomBuild Include="res\WhiteBoard\line_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\line_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\line_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\line_normal.bmp" />
+    <CustomBuild Include="res\mike.ico" />
+    <CustomBuild Include="res\pencil.cur" />
+    <CustomBuild Include="res\WhiteBoard\pencil_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\pencil_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\pencil_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\pencil_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_empty_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\rectangle_normal.bmp" />
+    <CustomBuild Include="res\Button\sendfiles_disable.bmp" />
+    <CustomBuild Include="res\Button\sendfiles_down.bmp" />
+    <CustomBuild Include="res\Button\sendfiles_hover.bmp" />
+    <CustomBuild Include="res\Button\sendfiles_normal.bmp" />
+    <CustomBuild Include="res\Button\sharescreen_disable.bmp" />
+    <CustomBuild Include="res\Button\sharescreen_down.bmp" />
+    <CustomBuild Include="res\Button\sharescreen_hover.bmp" />
+    <CustomBuild Include="res\Button\sharescreen_normal.bmp" />
+    <CustomBuild Include="res\trump.ico" />
+    <CustomBuild Include="res\Button\whiteboard_disable.bmp" />
+    <CustomBuild Include="res\Button\whiteboard_down.bmp" />
+    <CustomBuild Include="res\Button\whiteboard_hover.bmp" />
+    <CustomBuild Include="res\Button\whiteboard_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_1_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_1_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_1_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_1_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_2_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_2_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_2_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_2_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_3_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_3_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_3_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_3_normal.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_4_disable.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_4_down.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_4_hover.bmp" />
+    <CustomBuild Include="res\WhiteBoard\width_4_normal.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

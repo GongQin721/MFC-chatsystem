@@ -1,0 +1,115 @@
+# Project: InstantMessaging
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = DialogSetting.o InstantMessaging.o InstantMessagingDlg.o ListeningSocket.o StdAfx.o ChatDlg.o font.o oleobject.o oleobjects.o picture.o richtext.o ChatRoomClientDlg.o ChatRoomClientSocket.o ChatRoomServerDlg.o ChatRoomServerSocket.o AdvButton.o FriendsListCtrl.o ReceiveFilesSocket.o SendFilesClientDlg.o SendFilesClientThread.o SendFilesReceiveUsersDlg.o SendFilesServerDlg.o SendFilesServerSocket.o SendFilesServerThread.o SendFilesSocket.o WhiteBoardClientDlg.o WhiteBoardClientSocket.o WhiteBoardServerDlg.o WhiteBoardServerSocket.o CanvasStatic.o
+LINKOBJ  = DialogSetting.o InstantMessaging.o InstantMessagingDlg.o ListeningSocket.o StdAfx.o ChatDlg.o font.o oleobject.o oleobjects.o picture.o richtext.o ChatRoomClientDlg.o ChatRoomClientSocket.o ChatRoomServerDlg.o ChatRoomServerSocket.o AdvButton.o FriendsListCtrl.o ReceiveFilesSocket.o SendFilesClientDlg.o SendFilesClientThread.o SendFilesReceiveUsersDlg.o SendFilesServerDlg.o SendFilesServerSocket.o SendFilesServerThread.o SendFilesSocket.o WhiteBoardClientDlg.o WhiteBoardClientSocket.o WhiteBoardServerDlg.o WhiteBoardServerSocket.o CanvasStatic.o
+LIBS     = -L"E:/Dev/anzhuang/Dev-Cpp/MinGW64/lib" -L"E:/Dev/anzhuang/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows
+INCS     = -I"E:/Dev/anzhuang/Dev-Cpp/MinGW64/include" -I"E:/Dev/anzhuang/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Dev/anzhuang/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"E:/Dev/anzhuang/Dev-Cpp/MinGW64/include" -I"E:/Dev/anzhuang/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Dev/anzhuang/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/Dev/anzhuang/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = InstantMessaging.exe
+CXXFLAGS = $(CXXINCS) -D__GNUWIN32__ -W -DWIN32 -DNDEBUG -D_WINDOWS -D_AFXDLL -D_MBCS
+CFLAGS   = $(INCS) -D__GNUWIN32__ -W -DWIN32 -DNDEBUG -D_WINDOWS -D_AFXDLL -D_MBCS
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+DialogSetting.o: DialogSetting.cpp
+	$(CPP) -c DialogSetting.cpp -o DialogSetting.o $(CXXFLAGS)
+
+InstantMessaging.o: InstantMessaging.cpp
+	$(CPP) -c InstantMessaging.cpp -o InstantMessaging.o $(CXXFLAGS)
+
+InstantMessagingDlg.o: InstantMessagingDlg.cpp
+	$(CPP) -c InstantMessagingDlg.cpp -o InstantMessagingDlg.o $(CXXFLAGS)
+
+ListeningSocket.o: ListeningSocket.cpp
+	$(CPP) -c ListeningSocket.cpp -o ListeningSocket.o $(CXXFLAGS)
+
+StdAfx.o: StdAfx.cpp
+	$(CPP) -c StdAfx.cpp -o StdAfx.o $(CXXFLAGS)
+
+ChatDlg.o: ChatDlg.cpp
+	$(CPP) -c ChatDlg.cpp -o ChatDlg.o $(CXXFLAGS)
+
+font.o: font.cpp
+	$(CPP) -c font.cpp -o font.o $(CXXFLAGS)
+
+oleobject.o: oleobject.cpp
+	$(CPP) -c oleobject.cpp -o oleobject.o $(CXXFLAGS)
+
+oleobjects.o: oleobjects.cpp
+	$(CPP) -c oleobjects.cpp -o oleobjects.o $(CXXFLAGS)
+
+picture.o: picture.cpp
+	$(CPP) -c picture.cpp -o picture.o $(CXXFLAGS)
+
+richtext.o: richtext.cpp
+	$(CPP) -c richtext.cpp -o richtext.o $(CXXFLAGS)
+
+ChatRoomClientDlg.o: ChatRoomClientDlg.cpp
+	$(CPP) -c ChatRoomClientDlg.cpp -o ChatRoomClientDlg.o $(CXXFLAGS)
+
+ChatRoomClientSocket.o: ChatRoomClientSocket.cpp
+	$(CPP) -c ChatRoomClientSocket.cpp -o ChatRoomClientSocket.o $(CXXFLAGS)
+
+ChatRoomServerDlg.o: ChatRoomServerDlg.cpp
+	$(CPP) -c ChatRoomServerDlg.cpp -o ChatRoomServerDlg.o $(CXXFLAGS)
+
+ChatRoomServerSocket.o: ChatRoomServerSocket.cpp
+	$(CPP) -c ChatRoomServerSocket.cpp -o ChatRoomServerSocket.o $(CXXFLAGS)
+
+AdvButton.o: AdvButton.cpp
+	$(CPP) -c AdvButton.cpp -o AdvButton.o $(CXXFLAGS)
+
+FriendsListCtrl.o: FriendsListCtrl.cpp
+	$(CPP) -c FriendsListCtrl.cpp -o FriendsListCtrl.o $(CXXFLAGS)
+
+ReceiveFilesSocket.o: ReceiveFilesSocket.cpp
+	$(CPP) -c ReceiveFilesSocket.cpp -o ReceiveFilesSocket.o $(CXXFLAGS)
+
+SendFilesClientDlg.o: SendFilesClientDlg.cpp
+	$(CPP) -c SendFilesClientDlg.cpp -o SendFilesClientDlg.o $(CXXFLAGS)
+
+SendFilesClientThread.o: SendFilesClientThread.cpp
+	$(CPP) -c SendFilesClientThread.cpp -o SendFilesClientThread.o $(CXXFLAGS)
+
+SendFilesReceiveUsersDlg.o: SendFilesReceiveUsersDlg.cpp
+	$(CPP) -c SendFilesReceiveUsersDlg.cpp -o SendFilesReceiveUsersDlg.o $(CXXFLAGS)
+
+SendFilesServerDlg.o: SendFilesServerDlg.cpp
+	$(CPP) -c SendFilesServerDlg.cpp -o SendFilesServerDlg.o $(CXXFLAGS)
+
+SendFilesServerSocket.o: SendFilesServerSocket.cpp
+	$(CPP) -c SendFilesServerSocket.cpp -o SendFilesServerSocket.o $(CXXFLAGS)
+
+SendFilesServerThread.o: SendFilesServerThread.cpp
+	$(CPP) -c SendFilesServerThread.cpp -o SendFilesServerThread.o $(CXXFLAGS)
+
+SendFilesSocket.o: SendFilesSocket.cpp
+	$(CPP) -c SendFilesSocket.cpp -o SendFilesSocket.o $(CXXFLAGS)
+
+WhiteBoardClientDlg.o: WhiteBoardClientDlg.cpp
+	$(CPP) -c WhiteBoardClientDlg.cpp -o WhiteBoardClientDlg.o $(CXXFLAGS)
+
+WhiteBoardClientSocket.o: WhiteBoardClientSocket.cpp
+	$(CPP) -c WhiteBoardClientSocket.cpp -o WhiteBoardClientSocket.o $(CXXFLAGS)
+
+WhiteBoardServerDlg.o: WhiteBoardServerDlg.cpp
+	$(CPP) -c WhiteBoardServerDlg.cpp -o WhiteBoardServerDlg.o $(CXXFLAGS)
+
+WhiteBoardServerSocket.o: WhiteBoardServerSocket.cpp
+	$(CPP) -c WhiteBoardServerSocket.cpp -o WhiteBoardServerSocket.o $(CXXFLAGS)
+
+CanvasStatic.o: CanvasStatic.cpp
+	$(CPP) -c CanvasStatic.cpp -o CanvasStatic.o $(CXXFLAGS)
